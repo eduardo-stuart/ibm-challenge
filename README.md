@@ -25,10 +25,12 @@ As seguintes tecnologias foram usadas para a realização desse desafio:
 
 ### Telas capturadas
 
-![Tela capturada do projeto IBM-Challenge](./etc/tela-01.webp)
-![Tela capturada do projeto IBM-Challenge](./etc/tela-02.webp)
-![Tela capturada do projeto IBM-Challenge](./etc/tela-03.webp)
 
+![Tela capturada do projeto IBM-Challenge](./etc/tela-01.webp)
+
+![Tela capturada do projeto IBM-Challenge](./etc/tela-02.webp)
+
+![Tela capturada do projeto IBM-Challenge](./etc/tela-03.webp)
 
 ### Instruções
 
