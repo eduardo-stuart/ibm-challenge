@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/header') %>
+<body>
+
+  <%- include('./partials/nav') %>
+  
+  <div class="conteudo">
+    <h1>Nova Consulta</h1>
+    <form action="/pesquisar" method="post">
+      <label for="termos">Termos da Pesquisa</label>
+      <input type="text" id="termos" name="termos" required>
+      <button class="btn">Pesquisar</button>
+    </form>
+
+    <div class="anteriores">
+      <% if (locals.anteriores) { %>
+        <hr>
+        <h3>Consultas anteriores</h3>
+        <% locals.anteriores.forEach( consulta => { %>
+          <span class="termos-anteriores">
+            [ <%= consulta.termo %> ] 
+          </span>
+
+        <% }) %>
+      <% } %>
+
+    </div>
+  </div>
+
+  <%- include('./partials/footer') %>
+</body>
+</html>

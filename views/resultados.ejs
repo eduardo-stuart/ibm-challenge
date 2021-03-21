@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/header') %>
+<body>
+
+  <%- include('./partials/nav') %>
+  
+  <div class="conteudo">
+
+    <h2><%= locals.resultados.items.length %> resultados mais relevantes para "<%= termos %>"</h2>
+
+    <% if(locals.resultados.items.length > 0) { %>
+
+      <% locals.resultados.items.forEach(item => { %>
+
+        <div class="card">
+          <div class="card-titulo">
+            <% if (item.is_answered) { %>
+            <span class="card-respondido">
+              <i class="fas fa-check-circle"></i>
+            </span>
+            <% } %>
+            <a href="<%= item.link %>" target="_blank">
+              <%- item.title %> 
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+          <div class="card-tags">
+            <p>
+              <%= item.tags.join(' | ') %>
+            </p>
+          </div>
+          <div class="card-autor">
+            Autor: <a href="<%= item.owner.link %>" target="_blank">
+              <strong>
+                <%= item.owner.display_name%>
+              </strong>
+              <i class="fas fa-user-alt"></i>
+            </a>
+          </div>
+        </div>
+
+      <% }) %>
+
+    <% } %>
+
+    <div style="text-align: center; padding: 20px;">
+      <a href="/consultas" class="btn btn-social">Nova Consulta</a>
+    </div>
+
+  </div>
+
+  <%- include('./partials/footer') %>
+</body>
+</html>

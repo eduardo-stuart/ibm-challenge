@@ -1,0 +1,14 @@
+<nav>
+  <div class="titulo-site">
+    <a href="/"><h1>IBM-Challenge</h1></a>
+    <p>Desafio de Programação</p>
+  </div>
+  <% if (locals.user) { %>
+  <ul>
+    <li>
+      Olá, <%= user.displayName %>
+      <p style="text-align: right;"><a href="/logout">Sair <i class="fas fa-sign-out-alt"></i></a></p>
+    </li>
+  </ul>
+  <% } %>
+</nav>

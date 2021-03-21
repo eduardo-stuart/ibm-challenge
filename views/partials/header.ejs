@@ -1,0 +1,193 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IBM-Challenge | <%= titulo %></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+    body {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    p, h1, h2, h3, a, ul {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      color: #444;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+      text-transform: uppercase;
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    nav li {
+      list-style-type: none;
+      margin-left: 20px;
+    }
+    nav h1 {
+      font-size: 2rem;
+    }
+    nav p, nav a {
+      color: #888;
+      font-weight: 300;
+    }
+    footer {
+      color: #888;
+      text-align: center;
+      margin: 80px auto 20px;
+    }
+    h2 {
+      margin-bottom: 40px;
+    }
+    h3 {
+      text-transform: capitalize;
+      margin-bottom: 8px;
+    }
+    .conteudo {
+      margin-left: 20px;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    input, textarea {
+      display: block;
+      width: 100%;
+      margin: 10px auto;
+      padding: 8px;
+    }
+    label {
+      display: block;
+      margin-top: 24px;
+    }
+    textarea {
+      height: 120px;
+    }
+    button {
+      margin-top: 20px;
+      background: black;
+      color: white;
+      padding: 10px;
+      border: 0;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+
+
+    .conexoes {
+      width: 70%;
+      margin: 0 auto;
+      padding: 20px;
+      background: #222;
+      text-align: center;
+      border-radius: 20px;
+    }
+
+    .conexoes h1 {
+      color: white;
+    }
+
+    .conexoes .btn {
+      color: white;
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid rgba(200, 200, 200, 0.4);
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, .1);
+    }
+
+    .conexoes .fab {
+      margin-right: 15px;
+    }
+
+    .conexoes .btn:hover {
+      background-color: rgba(255, 255, 255, .1);
+      border-width: 2px;
+    }
+    .card {
+      max-width: 75%;
+      margin: 0 auto;
+      margin-top: 40px;
+      border: 1px solid rgba(0, 0, 0, .7);
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      text-align: center;
+    }
+
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .card-titulo {
+      text-transform: uppercase;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    .card-titulo a {
+      color: white;
+    }
+    .card-titulo a:hover {
+      color: orange;
+    }
+    .card-tags {
+      padding: 10x;
+      text-transform: capitalize;
+      font-size: 0.9em;
+      text-align: center;
+      border-bottom: 1px solid rgba(127, 127, 127, 0.4);
+    }
+    .card-tags p {
+      padding: 10px;
+      color: #555;
+    }
+    .card-autor {
+      padding: 5px;
+    }
+    .card-respondido {
+      margin-right: 10px;
+      color: greenyellow;
+    }
+    .anteriores {
+      max-width: 640px;
+      margin: 0 auto;
+      margin-top: 2em;
+    }
+    .termos-anteriores {
+      font-size: 0.8em;
+    }
+  </style>
+
+  <script type="text/javascript">
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setCookieDomain", "*.ibm-challenge.eduardostuart.pro.br"]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://matomo.eduardostuart.pro.br/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '7']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <noscript><p><img src="https://matomo.eduardostuart.pro.br/matomo.php?idsite=7&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+
+  <script async defer data-website-id="30d4f799-dabb-4362-9728-c75492580621" src="https://stats.eduardostuart.pro.br/umami.js"></script>
+</head>
